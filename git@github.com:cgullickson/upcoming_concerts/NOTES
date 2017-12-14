@@ -1,0 +1,9 @@
+A command line interface that tells the user about upcoming concerts in the Denver area
+
+Shows the user the upcoming concerts at Denver's top venues
+
+Asks the user if they would like more info about one of the listed shows
+
+Shows the user more information about their selected concert
+
+Tells the user to enjoy the show!
