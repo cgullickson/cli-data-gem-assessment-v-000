@@ -1,3 +1,5 @@
+require "pry"
+
 class UpcomingConcerts::Concert
   attr_accessor :artist, :showtime, :price, :ticket_url, :date
 
@@ -11,19 +13,21 @@ class UpcomingConcerts::Concert
 
   end
 
-  def self.scrape_deals
-    deals = []
+  def self.scrape_concerts
+    concerts = []
 
-    deals << self.scrape_redrocks
-    deals << self.scrape_fillmore
-    deals << self.scrape_beonkeys
+    concerts << self.scrape_redrocks
+    concerts << self.scrape_fillmore
+    concerts << self.scrape_beonkeys
 
-    deals
+    concerts
   end
 
-  def self.scrape_redrocks
+  def self.scrape_ogden
 
-    doc = Nokogiri::HTML(open)
+    doc = Nokogiri::HTML(open(www.ogdentheatre.com/events))
+
+    binding.pry
 
   end
 
